@@ -1,0 +1,30 @@
+f = open('3.txt', 'r')
+b = f.read()
+f.close()
+
+
+
+
+
+val = ['']
+j = 0
+
+
+for i in range(len(b)):
+    if b[i] != ' ':
+        val[j] += b[i]
+    else:
+        j += 1
+        val.append('')
+for i in range(len(val)):
+    val[i] = int(val[i])
+print(val)
+
+
+
+sum = 0
+yal = [1212,23123,123123,123213]
+
+for i in range(len(yal)):
+    sum += yal[i]
+print(sum)
