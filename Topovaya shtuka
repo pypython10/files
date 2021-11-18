@@ -1,0 +1,28 @@
+class Table:
+    def __init__(self, l = 1, w = 1, h = 1, c = 'white'):
+        self.length = l
+        self.width = w
+        self.height = h
+        self.colour =c
+    def mass(self):
+        print(self.length * self.width * self.height * 850)
+
+class NamberTable(Table):
+    def __init__(self,l,h,c,w,n=2):
+        Table.__init__(self, l , h , c , w )
+        self.namber = n
+    def resalt(self):
+        print(self.length * self.width * self.height * 850 * self.namber)
+
+
+
+
+taburetka_one = Table(1.56,0.67,0.72)
+taburetka_one.mass()
+
+taburetka_one2 = NamberTable(1.56, 0.67, 0.72, 'Белый')
+print("Ширина", taburetka_one2.width)
+print('Высота', taburetka_one2.height)
+print('Длина', taburetka_one2.length)
+print('Цвет', taburetka_one2.colour)
+print('Ответ', taburetka_one2.resalt())
