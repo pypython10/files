@@ -1,0 +1,15 @@
+class sum:
+    def __init__(self, a, b):
+        self.avg = a
+        self.acg = b
+    def sum(self):
+        print(self.avg + self.acg)
+    def mult(self):
+            print(self.avg * self.acg)
+
+
+object1 = sum(32, 122)
+object1.sum()
+
+object2 = sum(11, 11)
+object2.mult()
